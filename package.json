@@ -1,0 +1,25 @@
+{
+    "name": "discord-js",
+    "version": "1.0.0",
+    "description": "",
+    "main": "discordbot.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon discordbot.js",
+        "testAPI": "nodemon test.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@discordjs/opus": "^0.8.0",
+        "@discordjs/voice": "^0.10.0",
+        "discord-speech-recognition": "^2.2.0",
+        "discord-speech-to-text": "^1.1.5",
+        "discord.js": "^13.8.1",
+        "dotenv": "^10.0.0",
+        "libsodium-wrappers": "^0.7.10"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    }
+}
