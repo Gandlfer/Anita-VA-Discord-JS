@@ -1,0 +1,25 @@
+---
+apiVersion: v1
+kind: Pod
+
+metadata:
+  name: bot
+  labels:
+    app: bot
+
+spec:
+  containers:
+    - command:
+      - "sh"
+      - "-c"
+      - "npm start"
+      name: bot
+      image: asiancawfee/anita:latest
+      volumeMounts:
+        - name : env
+          mountPath: /app/.env
+  volumes:
+    - name: env
+      hostPath:
+        path: /home/ubuntu/git_project/Anita-VA-Discord-JS/.env
+
