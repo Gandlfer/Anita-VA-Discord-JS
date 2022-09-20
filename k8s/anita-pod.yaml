@@ -3,9 +3,9 @@ apiVersion: v1
 kind: Pod
 
 metadata:
-  name: bot
+  name: anita
   labels:
-    app: bot
+    app: anita
 
 spec:
   containers:
@@ -13,8 +13,9 @@ spec:
       - "sh"
       - "-c"
       - "npm start"
-      name: bot
+      name: anita
       image: asiancawfee/anita:latest
+      imagePullPolicy: Always
       volumeMounts:
         - name : env
           mountPath: /app/.env
